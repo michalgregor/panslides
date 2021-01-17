@@ -1,0 +1,391 @@
+/* styling commands */
+
+.box {
+    background-color: lightgray;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+.reveal table.borderless th,
+.reveal table.borderless td {
+    border-top: 0px none;
+    border-left: 0px none;
+    border-right: 0px none;
+    border-bottom: 0px none;
+}
+
+.cross {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.cross:before, .cross:after {
+    position: absolute;
+    content: '';
+    background: red;
+    display: block;
+    width: 100%;
+    height: 30px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 50%;
+    z-index: -5;
+}
+
+.cross:after {
+    -webkit-transform: rotate(45deg);    
+    transform: rotate(45deg);
+}
+
+.break1 {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.break05 {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.break075 {
+    display: block;
+    margin-bottom: 0.75em;
+}
+
+.break025 {
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.textsc {
+    font-variant: small-caps !important;
+}
+
+.textbf {
+    font-weight: bold !important;
+}
+
+.centering {
+    text-align: center !important;
+}
+
+.vcentering {
+    vertical-align: middle !important;
+}
+
+.spread1 > * > li {
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+}
+
+.spread1 > * > li:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread1 > * > li:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.spread075 > * > li {
+    margin-top: 0.75em !important;
+    margin-bottom: 0.75em !important;
+}
+
+.spread075 > * > li:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread075 > * > li:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.spread05 > * > li {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.spread05 > * > li:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread05 > * > li:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.spread025 > * > li {
+    margin-top: 0.25em !important;
+    margin-bottom: 0.25em !important;
+}
+
+.spread025 > * > li:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread025 > * > li:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.spread15 > * >  li {
+    margin-top: 1.5em !important;
+    margin-bottom: 1.5em !important;
+}
+
+.spread15 > * > li:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread15 > * > li:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.spread2 > * > li {
+    margin-top: 2em !important;
+    margin-bottom: 2em !important;
+}
+
+.spread2 > * > li:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread2 > * > li:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.spread1p > * > p {
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+}
+
+.spread1p > * > p:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread1p > * > p:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.spread075p > * > p {
+    margin-top: 0.75em !important;
+    margin-bottom: 0.75em !important;
+}
+
+.spread075p > * > p:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread075p > * > p:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.spread05p > * > p {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.spread05p > * > p:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread05p > * > p:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.spread025p > * > p {
+    margin-top: 0.25em !important;
+    margin-bottom: 0.25em !important;
+}
+
+.spread025p > * > p:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread025p > * > p:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.spread15p > * > p {
+    margin-top: 1.5em !important;
+    margin-bottom: 1.5em !important;
+}
+
+.spread15p > * > p:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread15p > * > p:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.spread2p > * > p {
+    margin-top: 2em !important;
+    margin-bottom: 2em !important;
+}
+
+.spread2p > * > p:first-of-type {
+    margin-top: initial !important;
+}
+
+.spread2p > * > p:last-of-type {
+    margin-bottom: initial !important;
+}
+
+.reveal .space-before0 {
+    margin-top: 0em !important;
+}
+
+.reveal .space-before, .reveal .space-before1 {
+    margin-top: 1em !important;
+}
+
+.reveal .space-before15 {
+    margin-top: 1.5em !important;
+}
+
+.reveal .space-before2 {
+    margin-top: 2em !important;
+}
+
+.reveal .space-before075 {
+    margin-top: 0.75em !important;
+}
+
+.reveal .space-before05 {
+    margin-top: 0.5em !important;
+}
+
+.reveal .space-before025 {
+    margin-top: 0.25em !important;
+}
+
+.reveal .space-after0 {
+    margin-bottom: 0em !important;
+}
+
+.reveal .space-after, .reveal .space-after1 {
+    margin-bottom: 1em !important;
+}
+
+.reveal .space-after15 {
+    margin-bottom: 1.5em !important;
+}
+
+.reveal .space-after2 {
+    margin-bottom: 2em !important;
+}
+
+.reveal .space-after075 {
+    margin-bottom: 0.75em !important;
+}
+
+.reveal .space-after05 {
+    margin-bottom: 0.5em !important;
+}
+
+.reveal .space-after025 {
+    margin-bottom: 0.25em !important;
+}
+
+.reveal .negspace-before, .reveal .negspace-before1 {
+    margin-top: -1em !important;
+}
+
+.reveal .negspace-before075 {
+    margin-top: -0.75em !important;
+}
+
+.reveal .negspace-before05 {
+    margin-top: -0.5em !important;
+}
+
+.reveal .negspace-before025 {
+    margin-top: -0.25em !important;
+}
+
+.reveal .negspace-after, .reveal .negspace-after1 {
+    margin-bottom: -1em !important;
+}
+
+.reveal .negspace-after075 {
+    margin-bottom: -0.75em !important;
+}
+
+.reveal .negspace-after05 {
+    margin-bottom: -0.5em !important;
+}
+
+.reveal .negspace-after025 {
+    margin-bottom: -0.25em !important;
+}
+
+.block{
+    font-size: 120%;
+    text-align: left;
+    display: block;
+}
+
+.reveal section .inline-img {
+    display: inline;
+    vertical-align: middle;
+}
+
+.subtitle {
+    display: block;
+    font-size: 1em;
+}
+
+/* font sizes */
+
+.tiny {
+    font-size: 50%;
+}
+
+.scriptsize {
+    font-size: 70%;
+}
+
+.footnotesize {
+    font-size: 80%;
+}
+
+.small {
+    font-size: 90%;
+}
+
+.normalsize {
+    font-size: 100%;
+}
+
+.large {
+    font-size: 120%;
+}
+
+.Large {
+    font-size: 140%;
+}
+
+.LARGE {
+    font-size: 170%;
+}
+
+.huge {
+    font-size: 200%;
+}
+
+.Huge {
+    font-size: 250%;
+}
+
+.note {
+    background-color: orange;
+    display: block;
+}

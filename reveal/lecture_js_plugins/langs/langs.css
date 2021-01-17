@@ -1,0 +1,41 @@
+.visiblelang {
+    display: initial !important;
+}
+
+li.visiblelang {
+    display: list-item !important;
+}
+
+.reveal #langswitch {
+	position: fixed;
+	left: 65px;
+    bottom: 30px;
+	z-index: 200;
+	font-size: 24px;
+}
+
+#langswitch label {
+    font-size: 1em;
+}
+
+#language {
+    font-size: 0.75em;
+    background-color: rgba(255,255,255,.85);
+    opacity: 10%;
+}
+
+#language:hover {
+    opacity: 100%;
+}
+
+#language option {
+    font-size: 0.65em;
+}
+
+/*
+ * Hide menu for pdf printing
+ */
+ body.print-pdf .reveal #langswitch
+ {
+     display: none;
+ }

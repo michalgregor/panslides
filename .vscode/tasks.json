@@ -1,0 +1,52 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "pandoc-revealjs",
+            "type": "shell",
+            "command": [
+                " pandoc -f markdown+smart -t revealjs --mathjax=reveal/mathjax/tex-chtml.js --slide-level=2 --lua-filter reveal/attributes.lua --filter pandoc-citeproc --lua-filter reveal/secname.lua --lua-filter reveal/include-files-raw.lua -s --template reveal/customized.revealjs --csl=reveal/iso690-numeric-sk.csl --bibliography=modules/bibliography.bib --css=reveal/custom.css -o ${fileBasenameNoExtension}.html ${relativeFile} -V revealjs-url=./reveal/reveal.js"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "chrome-pdf-en",
+            "type": "shell",
+            "command": [
+                " chrome --headless --disable-gpu --disable-extensions --run-all-compositor-stages-before-draw --virtual-time-budget=5000 --print-to-pdf=\"${workspaceFolder}\\${fileBasenameNoExtension}_en.pdf\" \\\"file:///${workspaceFolder}/${fileBasenameNoExtension}.html?lang=en&print-pdf=#/disable-scrollbar\\\""
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "chrome-pdf-sk",
+            "type": "shell",
+            "command": [
+                " chrome --headless --disable-gpu --disable-extensions --run-all-compositor-stages-before-draw --virtual-time-budget=5000 --print-to-pdf=\"${workspaceFolder}\\${fileBasenameNoExtension}_sk.pdf\" \\\"file:///${workspaceFolder}/${fileBasenameNoExtension}.html?lang=sk&print-pdf=#/disable-scrollbar\\\""
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "pandoc-html",
+            "type": "shell",
+            "command": [
+                " pandoc -f markdown+smart -t html --mathjax=reveal/mathjax/tex-chtml.js --lua-filter reveal/attributes.lua --filter pandoc-citeproc --lua-filter reveal/secname.lua --lua-filter reveal/include-files-raw.lua -s --csl=reveal/iso690-numeric-en.csl --bibliography=modules/bibliography.bib -o ${fileBasenameNoExtension}.html ${relativeFile}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

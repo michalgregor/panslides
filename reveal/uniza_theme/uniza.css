@@ -1,0 +1,38 @@
+/**
+ * UNIZA theme for reveal.js.
+ *
+ * By Michal Gregor
+ */
+
+ @import url(base.css);
+
+/* CSS variables */
+:root {
+  --backgroundColor: #fff;
+  --themeColor: #d17409;
+  --barColor: #f25e28;
+  --mainColor: #222;
+  --headingColor: #222;
+  --selectionColor: #fff;
+  --linkColorDarken15: #884b06; /* darken( $linkColor, 15% ) */  
+  --linkColor: var(--themeColor);
+  --linkColorHover: #f69a30; /* lighten( $linkColor, 15% ) */
+  --selectionBackgroundColor: #f8b261; /* lighten( $linkColor, 25% ); */
+
+  --mainFontSize: 26px;
+  --mainFont: "Source Sans Pro", Helvetica, sans-serif;
+  --headingTextShadow: none;
+  --headingLetterSpacing: normal;
+  --headingTextTransform: uppercase;
+  --headingFontWeight: 600;
+  --heading1Size: 1.6em;
+  --heading2Size: 1.4em;
+  --heading3Size: 1.15em;
+  --heading4Size: 1em;
+  --blockMargin: 10px;
+  --headingMargin: 0 0 10px 0;
+  --headingLineHeight: 1.05;
+  --headingFont: "Source Sans Pro", Helvetica, sans-serif;
+  --heading1TextShadow: none;
+  --codeFont: monospace;
+}

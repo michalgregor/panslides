@@ -1,0 +1,151 @@
+
+/* List styling. */
+
+li {
+    font-size: 100%;
+}
+  
+li li {
+    font-size: 85%;
+}
+
+/* styles for styling commands */
+.block{
+    color: var(--themeColor);
+}
+
+/* slide styling */
+
+.reveal.slide .slides > section.slide,
+.reveal.slide .slides > section > section.slide {
+    width: calc(100% - 20px);
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+section.slide > :first-child:before,
+section.slide > :first-child.optional:before,
+section.slide > :first-child.empty:before {
+    content: '';
+    display: block;
+    position: relative;
+    top: 0px;
+    left:-25px;
+    height: 100px;
+    width: calc(100% + 35px);
+}
+
+section.slide > :first-child:before {
+    margin-bottom: -75px;
+    background-color: var(--barColor);
+    z-index: -1;
+}
+
+section.slide > :first-child.optional:before {
+    background-color: gray;
+}
+
+section.slide > :first-child.blank:before {
+    background-color: white;
+}
+
+section.slide > :first-child {
+    margin-left:15px;
+    height: 100px;
+    color: white;
+}
+
+section.slide .subtitle {
+    height: 40px;
+    margin-left:15px;
+    margin-top: -50px;
+    color: white;
+}
+
+section.slide > :first-child.blank {
+    color: black;
+    text-align: center;
+}
+
+section.slide > :first-child.blank ~ * > .subtitle {
+    color: black;
+    text-align: center;
+}
+
+section.slide > :first-child.empty:before {
+    background-color: white;
+}
+
+section.slide > :first-child.empty {
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section.slide > :first-child.empty ~ * > .subtitle {
+    position: relative;
+    color: black;
+    text-align: center;
+    top: -20px;
+}
+
+/* special styling for the front slide */
+
+section.frontslide > :first-child:before,
+section.frontslide > :first-child.optional:before,
+section.frontslide > :first-child.blank:before {
+    top:25px;
+    height:150px;
+}
+
+section.frontslide > :first-child:before,
+section.frontslide > :first-child.optional:before,
+section.frontslide > :first-child.blank:before {
+    margin-bottom: -80px;
+}
+
+section.frontslide .subtitle {
+    margin-top: 20px;
+    height: 60px;
+}
+
+/* special styling for printouts */
+
+.print-pdf .reveal.slide .slides > section,
+.print-pdf .reveal.slide .slides > section > section {
+    width: 960px;
+    height: 700px;
+    position: relative;
+}
+
+/* other styling */
+
+section {
+    text-align: left; 
+}
+
+.reveal h3 {
+    margin-top: 1em;
+}
+
+.reveal ol, .reveal dl, .reveal ul {
+    display: block;
+}
+
+.reveal .frontslide img {
+    box-shadow: none;
+}
+
+figcaption {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#refs {
+    font-size: 0.75em;
+}

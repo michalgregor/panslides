@@ -1,0 +1,34 @@
+/* Recolor the base theme using CSS variables */
+
+@import url(base.css);
+
+/* CSS variables */
+:root {
+    --backgroundColor: #fff;
+    --themeColor: rgb(0, 80, 199);
+    --barColor: #002255ff;
+    --mainColor: #222;
+    --headingColor: #222;
+    --selectionColor: #fff;
+    --linkColorDarken15: #0041a2; /* darken( $linkColor, 15% ) */
+    --linkColor: var(--themeColor);
+    --linkColorHover: #0041a2; /* lighten( $linkColor, 15% ) */
+    --selectionBackgroundColor: #0055d5; /* lighten( $linkColor, 25% ); */
+    
+    --mainFontSize: 26px;
+    --mainFont: "Source Sans Pro", Helvetica, sans-serif;
+    --headingTextShadow: none;
+    --headingLetterSpacing: normal;
+    --headingTextTransform: uppercase;
+    --headingFontWeight: 600;
+    --heading1Size: 1.6em;
+    --heading2Size: 1.4em;
+    --heading3Size: 1.15em;
+    --heading4Size: 1em;
+    --blockMargin: 10px;
+    --headingMargin: 0 0 10px 0;
+    --headingLineHeight: 1.05;
+    --headingFont: "Source Sans Pro", Helvetica, sans-serif;
+    --heading1TextShadow: none;
+    --codeFont: monospace;
+}

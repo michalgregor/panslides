@@ -1,0 +1,69 @@
+
+/* remove borders and shadows around images and such */
+
+.reveal section img, .reveal section video,
+.reveal section iframe {
+    border: 0;
+    margin: auto;
+    display: block;
+    box-shadow: none;
+}
+
+/* word wrapping for code listings */
+
+code {
+    white-space: pre-wrap !important;
+}
+
+/* transparent menu button */
+
+
+.slide-menu-button {
+    opacity: 30%;
+}
+
+.slide-menu-button:hover {
+    opacity: 100%;
+}
+
+/* front slide element styling */
+
+.author {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.author-name {
+    font-variant: small-caps;
+}
+
+.author-affiliation {
+    margin-top:1.2em;
+    font-size: 0.8em;
+}
+
+.author-email {
+    font-size: 0.8em;
+}
+
+.author-email::before {
+    content: "<";
+}
+
+.author-email::after {
+    content: ">";
+}
+
+.intro-left {
+    text-align: center;
+}
+
+.intro-left-column, .intro-right-column {
+    width:50%;
+    vertical-align: middle !important;
+}
+
+.date {
+    text-align: center;
+    font-size: 0.8em;
+}

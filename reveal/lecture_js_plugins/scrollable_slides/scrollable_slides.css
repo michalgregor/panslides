@@ -1,0 +1,23 @@
+/* CSS for scrollable slides */
+
+section.scrollable-slide {
+    overflow-y: auto !important;
+}
+
+section.unscrollable-slide {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+::-webkit-scrollbar-corner {
+  background-color: #333;
+}

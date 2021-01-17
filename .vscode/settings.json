@@ -1,0 +1,5 @@
+{
+    "markdown-preview-enhanced.usePandocParser": true,
+    "markdown-preview-enhanced.pandocMarkdownFlavor": "markdown",
+    "markdown-preview-enhanced.pandocArguments": "--filter pandoc-citeproc,--lua-filter reveal/secname.lua,--template reveal/customized.revealjs,-V revealjs-url=./reveal/reveal.js"
+}
