@@ -144,12 +144,14 @@ function proc_list(doc_list)
             table.insert(other_content, content[i_rest]);
         end
 
+        -- insert the content assumed by the heading
+        for i_head = 1, #(el.blocks[1].content) do
+            table.insert(other_content, el.blocks[1].content[i_head]);
+        end
+
         if #other_content > 0 then
             table.insert(new_list, pandoc.Plain(other_content));
         end
-
-        -- insert the content assumed by the heading
-        table.insert(new_list, pandoc.Plain(el.blocks[1].content));
 
         -- insert the blocks which were not assumed by the heading
         for ic = 2, #(el.blocks) do
