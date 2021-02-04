@@ -16,7 +16,7 @@
             "label": "pandoc-revealjs-self-contained",
             "type": "shell",
             "command": [
-                " pandoc -f markdown+smart -t revealjs --self-contained --mathjax=reveal/mathjax/tex-chtml.js --slide-level=2 --lua-filter reveal/attributes.lua --filter pandoc-citeproc --lua-filter reveal/secname.lua --lua-filter reveal/include-files-raw.lua -s --template reveal/customized.revealjs --csl=reveal/iso690-numeric-sk.csl --bibliography=modules/bibliography.bib --css=reveal/custom.css -o self_contained/${fileBasenameNoExtension}.html ${relativeFile} -V revealjs-url=./reveal/reveal.js"
+                " pandoc -f markdown+smart -t revealjs --self-contained --mathjax=https://min.gitcdn.link/repo/michalgregor/panslides/main/reveal/mathjax/tex-chtml.js --slide-level=2 --lua-filter reveal/attributes.lua --filter pandoc-citeproc --lua-filter reveal/secname.lua --lua-filter reveal/include-files-raw.lua -s --template reveal/customized.revealjs --csl=reveal/iso690-numeric-sk.csl --bibliography=modules/bibliography.bib --css=reveal/custom.css -o self_contained/${fileBasenameNoExtension}.html ${relativeFile} -V revealjs-url=https://min.gitcdn.link/repo/michalgregor/panslides/main/reveal/reveal.js"
             ],
             "group": "build",
             "problemMatcher": []
