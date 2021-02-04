@@ -1,0 +1,7 @@
+.ipynb_checkpoints**
+/*.html
+/*.htm
+/*.pdf
+/TODO
+**.bak
+/self-contained/**
