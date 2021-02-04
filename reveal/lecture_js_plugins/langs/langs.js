@@ -156,7 +156,7 @@ var RevealLangs = window.RevealLangs || (function(){
 })();
 
 // the language switching code
-language_select = document.getElementById("language");
+var language_select = document.getElementById("language");
 
 if(language_select) {
 	function langUpdateURLParameter(url, param, paramVal) {

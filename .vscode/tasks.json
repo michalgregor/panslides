@@ -13,6 +13,15 @@
             "problemMatcher": []
         },
         {
+            "label": "pandoc-revealjs-self-contained",
+            "type": "shell",
+            "command": [
+                " pandoc -f markdown+smart -t revealjs --self-contained --mathjax=reveal/mathjax/tex-chtml.js --slide-level=2 --lua-filter reveal/attributes.lua --filter pandoc-citeproc --lua-filter reveal/secname.lua --lua-filter reveal/include-files-raw.lua -s --template reveal/customized.revealjs --csl=reveal/iso690-numeric-sk.csl --bibliography=modules/bibliography.bib --css=reveal/custom.css -o self_contained/${fileBasenameNoExtension}.html ${relativeFile} -V revealjs-url=./reveal/reveal.js"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
             "label": "chrome-pdf-en",
             "type": "shell",
             "command": [
@@ -47,6 +56,15 @@
                 "isDefault": true
             },
             "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "build",
+            "path": "reveal/reveal.js/",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build - reveal/reveal.js",
+            "detail": "grunt"
         }
     ]
 }
